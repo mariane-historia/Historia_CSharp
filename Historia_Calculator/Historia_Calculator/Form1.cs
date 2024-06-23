@@ -15,24 +15,24 @@ namespace Historia_Calculator
 
         private void AttachEventHandlers()
         {
-            button1.Click += ButtonClick;
-            button2.Click += ButtonClick;
-            button3.Click += ButtonClick;
-            button4.Click += ButtonClick;
-            button5.Click += ButtonClick;
-            button6.Click += ButtonClick;
-            button7.Click += ButtonClick;
-            button8.Click += ButtonClick;
-            button9.Click += ButtonClick;
-            button10.Click += ButtonClick;
-            button11.Click += ButtonClick;
-            button12.Click += ButtonClick;
-            button13.Click += ButtonClick;
-            button14.Click += ButtonClick;
-            button15.Click += ButtonClick;
-            button16.Click += ButtonClick;
-            button17.Click += ButtonClick;
-            button18.Click += ButtonClick;
+            num7.Click += ButtonClick;
+            num8.Click += ButtonClick;
+            num9.Click += ButtonClick;
+            plus.Click += ButtonClick;
+            num4.Click += ButtonClick;
+            num5.Click += ButtonClick;
+            num6.Click += ButtonClick;
+            minus.Click += ButtonClick;
+            num1.Click += ButtonClick;
+            num2.Click += ButtonClick;
+            num3.Click += ButtonClick;
+            multiply.Click += ButtonClick;
+            period.Click += ButtonClick;
+            num0.Click += ButtonClick;
+            equals.Click += ButtonClick;
+            divide.Click += ButtonClick;
+            c.Click += ButtonClick;
+            del.Click += ButtonClick;
         }
 
         private void ButtonClick(object sender, EventArgs e)
