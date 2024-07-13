@@ -9,9 +9,9 @@ namespace Weather
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.PictureBox picIcon2;
         private Bunifu.Framework.UI.BunifuCustomLabel labDetails;
-        private Bunifu.Framework.UI.BunifuCustomLabel labTemp; // Added Label
-        private Bunifu.Framework.UI.BunifuCustomLabel labHumidity; // Added Label
-        private Bunifu.Framework.UI.BunifuCustomLabel labCloudiness; // Added Label
+        private Bunifu.Framework.UI.BunifuCustomLabel labTemp; 
+        private Bunifu.Framework.UI.BunifuCustomLabel labHumidity; 
+        private Bunifu.Framework.UI.BunifuCustomLabel labCloudiness; 
         private Bunifu.Framework.UI.BunifuCustomLabel labWindSpeed;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
 

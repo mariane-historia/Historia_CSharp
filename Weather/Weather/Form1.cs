@@ -7,7 +7,7 @@ namespace Weather
 {
     public partial class Form1 : Form
     {
-        private const string ApiKey = "b7896fc5c61e8c8aaadb190c4c0618a3"; // Replace with your API key
+        private const string ApiKey = "b7896fc5c61e8c8aaadb190c4c0618a3"; 
 
         public Form1()
         {
@@ -18,7 +18,6 @@ namespace Weather
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Set the current date to bunifuCustomLabel2
             bunifuCustomLabel2.Text = DateTime.Now.ToString("MMMM dd, yyyy");
         }
 
@@ -57,7 +56,6 @@ namespace Weather
                 float lat = initialInfo.coord.lat;
                 float lon = initialInfo.coord.lon;
 
-                // Get weather information including precipitation probability
                 string forecastUrl = string.Format("https://api.openweathermap.org/data/2.5/forecast?lat={0}&lon={1}&appid={2}", lat, lon, ApiKey);
 
                 try
@@ -71,7 +69,6 @@ namespace Weather
                         return;
                     }
 
-                    // Example: Displaying first forecast item's main weather info
                     picIcon.ImageLocation = "https://openweathermap.org/img/w/" + info.list[0].weather[0].icon + ".png";
                     labDetails.Text = info.list[0].weather[0].description;
                     labTemp.Text = info.list[0].main.temp.ToString();
@@ -118,7 +115,7 @@ namespace Weather
 
 public class WeatherInfo
 {
-    public Coord coord { get; set; } // Add this line
+    public Coord coord { get; set; }
     public City city { get; set; }
     public List[] list { get; set; }
 }
